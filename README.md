@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Robotics-Devops/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Robotics-Devops?style=flat-square&logo=github&color=blue" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Robotics-Devops/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Robotics-Devops?style=flat-square&logo=github&color=blue" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Robotics-Devops/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Robotics-Devops?style=flat-square&logo=github&color=blue" alt="GitHub Forks"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
   <a href="#-how-to-contribute"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
@@ -71,7 +71,7 @@ The table below lists leading commercial SaaS and hosted platforms for robotics 
 
 ## 💻 Open-Source GitHub Projects
 
-Explore the open-source building blocks of modern robotics infrastructure. The projects below are sorted in **descending order by GitHub star count**. Beside each repository name is a live star badge linking directly to that project's stargazers page.
+Explore the open-source building blocks of modern robotics infrastructure. The projects below are sorted in **descending order by GitHub Stars_Count**. Beside each repository name is a live Stars_Badge linking directly to that project's stargazers page.
 
 - **[Autoware](https://github.com/autowarefoundation/autoware)** [![Stars](https://img.shields.io/github/stars/autowarefoundation/autoware?style=social&color=white)](https://github.com/autowarefoundation/autoware/stargazers) — The world's leading open-source software stack for autonomous driving mobility, built natively on ROS 2 with complete perception, localization, planning, and control pipelines.
 - **[ROS 2 (Robot Operating System 2)](https://github.com/ros2/ros2)** [![Stars](https://img.shields.io/github/stars/ros2/ros2?style=social&color=white)](https://github.com/ros2/ros2/stargazers) — The industry-standard open-source robotics middleware framework, delivering real-time determinism, DDS-based communications, cross-platform packaging, and robust hardware abstraction.
@@ -119,7 +119,7 @@ Contributions are warmly welcomed! Help make the robotics DevOps ecosystem trans
 3. 📝 **Add or edit entries** in `README.md`:
    - Follow the established table or list format.
    - For SaaS products, include company scale, specific starting tier pricing, and exact free tier/trial limits.
-   - For open-source repos, ensure the star badge format matches: `[![Stars](https://img.shields.io/github/stars/{owner}/{repo}?style=social&color=white)](https://github.com/{owner}/{repo}/stargazers)`.
+   - For open-source repos, ensure the Stars_Badge format matches: `[![Stars](https://img.shields.io/github/stars/{owner}/{repo}?style=social&color=white)](https://github.com/{owner}/{repo}/stargazers)`.
 4. 🚀 **Commit your changes** (`git commit -m "Add ToolName to Robotics DevOps ecosystem"`).
 5. 📤 **Push to your branch** and submit a **Pull Request** with a concise description of the tool.
 
