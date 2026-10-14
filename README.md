@@ -1,203 +1,157 @@
-# Awesome-Robotics-Devops
-
-## Top Robotics DevOps Tools Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Fleet Observability, Incident Management & Edge Deployment*  
-
-**Last updated: March 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Robotics DevOps**. These tools help robotics companies monitor fleets, manage incidents, deploy software updates, and coordinate robot operations at scale — bringing DevOps practices to the unique challenges of physical robot systems.
-
-
-
-**Examples** include Foxglove, Formant, InOrbit, Cogniteam Nimbus, Robust AI, MOV.AI, Transitive Robotics, Tartan Sense, Polymath Robotics, and Apex.AI (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom fleet monitoring, and transparent robot observability — ideal for robotics companies prioritizing data ownership, developers building fleet infrastructure, and teams avoiding vendor lock-in.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Foxglove](https://foxglove.dev/)**  
-
-  Visualization, observability, and data management platform purpose-built for robotics. Centralizes multimodal temporal datasets including time series, sensor logs, imagery, LiDAR/point clouds, and geospatial maps in a single integrated workspace. Supports real-time ROS/ROS 2 connections via bridges and WebSockets, with desktop apps for Linux, Windows, and macOS. Free tier includes 3 developer seats, 10 GB cloud storage, and 5 connected devices. Starting at $18/month for paid plans .
-
-
-
-- **[Formant](https://formant.io/)**  
-
-  Fleet observability and robot operations platform with comprehensive device management, incident management, and analytics. Features device configuration templates for bulk provisioning, group-based organization, multi-device video monitoring, custom alerting with threshold triggers, operator intervention requests (selection and labeling), and Formant Analytics for fleet uptime and incident rate reporting. Supports Slack, SMS, PagerDuty, and webhook notifications .
-
-
-
-- **[InOrbit](https://www.inorbit.ai/)**  
-
-  Cloud-based robot operations platform with fleet management, real-time analytics, and incident management. Features robot-agnostic agent with adaptive diagnostics, configurable dashboards, advanced teleoperation, and multi-map support. Data sampling modes include Regular (10-second intervals), Diff (on change), and Event (immediate). Compatible with ROS 1, ROS 2, and non-ROS robots through Edge SDK. Standard Edition is free to start with pay-as-you-go pricing based on monthly active robots .
-
-
-
-- **[Cogniteam Nimbus](https://www.cogniteam.com/)**  
-
-  Cloud robotics platform for fleet management and autonomous operations.
-
-
-
-- **[Robust AI](https://www.robust.ai/)**  
-
-  Cognitive robotics platform with fleet management capabilities.
-
-
-
-- **[MOV.AI](https://www.mov.ai/)**  
-
-  Robotics engine platform for AMR fleet management and orchestration.
-
-
-
-- **[Transitive Robotics](https://transitiverobotics.com/)**  
-
-  Open-source framework for full-stack robotics with hosted solution available. Provides WebRTC video streaming, remote teleoperation, and ROS tooling capabilities. Transitive 2.0 adds ClickHouse for time-series data storage, Grafana for visualization, and Alertmanager for custom alerting .
-
-
-
-- **[Tartan Sense](https://www.tartansense.com/)**  
-
-  Robotics platform for agricultural automation with fleet management.
-
-
-
-- **[Polymath Robotics](https://www.polymathrobotics.com/)**  
-
-  Autonomous vehicle software platform for industrial fleets.
-
-
-
-- **[Apex.AI](https://www.apex.ai/)**  
-
-  Safety-certified autonomous mobility software with fleet deployment tools.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Transitive](https://github.com/transitiverobotics/transitive)**  
-
-  Open-source framework for full-stack robotics with **fine-grained, namespaced access control**. Core concepts include full-stack packages (cross-device dependency management), real-time data synchronization with full-stack reactivity, and topic-based access control. Version 2.0 integrates ClickHouse for historic time-series data, Grafana for visualization, and Alertmanager for custom alerting. Includes free Health Monitoring capability with sparkline plots and 24-hour heartbeat visualization. Runs on Docker Compose with self-hosted deployment .
-
-
-
-- **[Trillium](https://github.com/RobotnikAutomation/trillium)**  
-
-  Free, open-source web-based robotics visualization and control application. Fork of Foxglove Studio v1.87.0 (last open-source release before Foxglove went proprietary). Features 40% smaller web app and 23% smaller desktop binaries compared to Lichtblick (another Foxglove fork). Available as web app, Docker container, or desktop installer for Linux and Windows. Extensions installable directly in browser or desktop app .
-
-
-
-- **[OpenRobOps (ORO)](https://www.inorbit.ai/)**  
-
-  InOrbit's open-source robot operations and fleet management layer, announced for full open-source release in 2026. Built on InOrbit's production-proven platform that has managed thousands of AMRs. Integrates natively with ROS on-device and Open RMF for coordination. Provides transparent architecture, observability, fleet control, and full data ownership. Aims to be the standard, self-hostable fleet manager for ROS developers .
-
-
-
-- **[NexusOS](https://pypi.org/project/nexusos-robotics/)**  
-
-  Universal OS and fleet middleware for heterogeneous robots, solving the "Tower of Babel" through zero-dependency hardware abstraction. Unifies multi-vendor fleets (mobile rovers, arms, quadrupeds, drones) under standardized messaging, control, and safety. Features asynchronous Python HAL plugin architecture (Serial, CAN, Modbus, ROS 2, MicroPython), Protobuf/WebSocket/gRPC transport, FastAPI cloud backend, and glassmorphic web dashboard with 2D pose trajectory and teleoperation. Docker Compose orchestration .
-
-
-
-- **[Canonical Observability Stack (COS)](https://ubuntu.com/blog/roscon-2025)**  
-
-  Fully open-source observability infrastructure for ROS 2 devices using Ubuntu. Combines Grafana, Prometheus, and Loki to provide unified monitoring for robotics fleets. Features device onboarding, automatic ros2bag uploads to self-hosted server, remote fleet monitoring, live ROS data access, Ubuntu system data and logs access, and event alerting (low battery, network loss). Demonstrated at ROSCon 2025 with Botmind fleet management integration .
-
-
-
-- **[Lichtblick](https://github.com/lichtblick-suite/lichtblick)**  
-
-  Another fork of Foxglove Studio maintained by BMW. Became the parent repo of Foxglove Studio forks when commit history was deleted. Provides visualization and data management for robotics development with larger binary sizes compared to Trillium (99 MB vs 76 MB for Linux .deb packages) .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[Awesome Open Source Robots](https://github.com/stephane-caron/awesome-open-source-robots)** — Curated list of robots with open source software, hardware, and both. Includes arms, bipeds, quadrupeds, humanoids, drones, and mobile manipulators with license information .
-
-- **[Awesome Robotics](https://github.com/ahundt/awesome-robotics)** — Curated list of robotics links and software libraries useful for robot development. 1,364 GitHub stars .
-
-- **[Awesome Robot Descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions)** — Curated list of robot descriptions (URDF, MJCF) with license and feature matrix for arms, bipeds, dual arms, drones, and end effectors .
-
-- **ROS 2 Ecosystem** — Standard robot operating system providing middleware, tools, and libraries for fleet development.
-
-- **Open RMF** — Open Robot Management Framework for multi-fleet coordination, integrated with OpenRobOps.
-
-
-
-**Frameworks for building custom systems**: Combine **Transitive** for full-stack robotics with ClickHouse/Grafana/Alertmanager stack, **Trillium** for open-source Foxglove-compatible visualization, **NexusOS** for heterogeneous fleet abstraction, and **Canonical Observability Stack** for Ubuntu-based ROS 2 monitoring to build a complete self-hosted robotics DevOps platform.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Robotics DevOps tools must comply with safety regulations, data protection laws, and industry standards. Fleet operations require validation of monitoring and incident management workflows before production deployment.
-
-- Self-hosted open-source solutions require proper infrastructure, security hardening, and ongoing maintenance.
-
-
+<div align="center">
+
+<img src="assets/banner.svg" alt="Awesome Robotics DevOps Banner" width="100%"/>
+
+# 🤖 Awesome Robotics DevOps (RobOps)
+
+**A curated directory of SaaS platforms, open-source software, observability frameworks, and edge deployment tools for robotics fleets and Physical AI.**
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Robotics-Devops/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Robotics-Devops?style=flat-square&logo=github&color=blue" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Robotics-Devops/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Robotics-Devops?style=flat-square&logo=github&color=blue" alt="GitHub Forks"/></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
+  <a href="#-how-to-contribute"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
+  <a href="https://github.com/topics/robops"><img src="https://img.shields.io/badge/Topic-RobOps-blue?style=flat-square" alt="RobOps"/></a>
+  <a href="https://github.com/topics/fleet-management"><img src="https://img.shields.io/badge/Topic-Fleet--Management-blueviolet?style=flat-square" alt="Fleet Management"/></a>
+  <a href="https://github.com/topics/ros2"><img src="https://img.shields.io/badge/Topic-ROS%202-red?style=flat-square" alt="ROS 2"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+</div>
 
+## 📖 Introduction & SEO Overview
 
-**Made for robotics engineers, fleet operators, DevOps teams, and developers building robot operations platforms.**  
+**Robotics DevOps (RobOps)** bridges continuous integration, fleet telemetry, cloud-to-edge deployment, and operational reliability for autonomous systems. Unlike traditional software DevOps, robotics environments demand resilient data pipelines that handle intermittent connectivity, high-frequency multimodal sensor logs (LiDAR, point clouds, video, IMU), remote teleoperation over WebRTC, mission deconfliction, and deterministic execution on physical hardware.
 
-Let's make robotics DevOps more open, observable, and fleet-friendly.
+This repository tracks both leading **enterprise SaaS platforms** and high-velocity **open-source GitHub projects** powering the next generation of Autonomous Mobile Robots (AMRs), Automated Guided Vehicles (AGVs), robotic arms, delivery drones, and autonomous off-highway equipment.
+
+---
+
+## 📑 Table of Contents
+
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS / Hosted Fleet Management Platforms](#️-saas--hosted-fleet-management-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🏗️ Recommended Architecture Stacks](#️-recommended-architecture-stacks)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#️-disclaimer)
+- [📈 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+
+---
+
+## 🌐 Sector Overview & Market Dynamics
+
+- **Estimated Market Size**: The global Robot Fleet Management Software and Robot Operations (RobOps) sector is currently valued at approximately **$500M – $700M** and is on pace to exceed **$2.5B by 2030**, advancing at a compound annual growth rate (CAGR) of **~22%–28%**. This surge is catalyzed by multi-robot rollouts across warehouses, logistics fulfillment hubs, smart agriculture, and manufacturing lines.
+- **Market Structure & Fragmentation Dynamics**: The RobOps orchestration and observability layer is **moderately to highly fragmented** rather than winner-take-all. Because enterprise facilities deploy heterogeneous fleets (e.g., mixing autonomous forklifts, cleaning bots, inspection quadrupeds, and robotic pickers from different hardware OEMs), single-vendor walled gardens create severe integration bottlenecks. Consequently, the industry strongly favors vendor-agnostic platforms, interoperable standards (like Open RMF and VDA 5050), and transparent data formats (like MCAP), cultivating a vibrant and diverse market for specialized software providers.
+
+---
+
+## ☁️ SaaS / Hosted Fleet Management Platforms
+
+The table below lists leading commercial SaaS and hosted platforms for robotics fleet operations, sorted in descending order by company scale (valuation and capital raised).
+
+| 🏢 Platform / Company | 📊 Scale (Valuation / Funding) | 🛠️ Key Capabilities & Infrastructure | 💰 Starting Tier Pricing | 🎁 Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Apex.AI](https://www.apex.ai/)** | **~$200M – $250M Valuation**<br>($75M+ Total Raised; Series B led by Orillion, Continental, ZF, Toyota Ventures, Volvo Group, LG) | Safety-certified real-time robotics & mobility OS (`Apex.Grace` and `Apex.Ida`); ISO 26262 ASIL-D certified ROS 2 runtime; deterministic edge deployment; automotive-grade multi-ECU communications | **$25,000 / year**<br>(Annual commercial developer seat & OEM runtime license) | **30-day evaluation trial**<br>(Full safety SDK access and developer documentation upon qualification & NDA) |
+| **[Foxglove](https://foxglove.dev/)** | **~$150M – $200M Valuation**<br>($58M+ Total Raised; $40M Series B led by Bessemer Venture Partners) | Multimodal temporal visualization workspace; real-time ROS 1/2 WebSocket & bridge connections; native MCAP telemetry recording; 3D point cloud & camera canvas; cloud data indexing & instant playback | **$18 / user / month**<br>(Team Plan starting tier) | **Free Forever Plan**:<br>10 GB cloud storage, 3 developer users, up to 5 connected devices, 1 active project (Academic: 1 TB free) |
+| **[Formant](https://formant.io/)** | **~$120M – $150M Valuation**<br>($45M Total Raised; $21M Series B led by BMW i Ventures, Intel Capital, SignalFire) | Enterprise robot operations & fleet observability; low-latency WebRTC teleoperation; threshold alerting (PagerDuty, Slack, SMS); automated incident intervention requests; fleet uptime analytics | **$150 / robot / month**<br>(Commercial fleet tier; Base team subscription at $2,000/mo) | **Free Forever Developer Tier**:<br>Up to 2 connected robots, live telemetry streaming, command dispatch, and SSH tunneling (or 14-day enterprise trial) |
+| **[Robust AI](https://www.robust.ai/)** | **~$100M – $130M Valuation**<br>($42.5M Total Raised; $20M Series A-1 led by Prime Movers Lab, JAZZ Ventures, Playground) | Cognitive robotics platform; collaborative mobile warehouse robot (`Carter`) fleet software; dynamic human-robot route coordination; multi-robot facility orchestration | **$2,500 / robot / month**<br>(Robotics-as-a-Service hardware & fleet software bundle) | **30-day simulation trial**<br>(Proof-of-concept digital twin environment for facility layout & cart workflow validation) |
+| **[MOV.AI](https://www.mov.ai/)** | **~$35M – $50M Valuation**<br>($15.6M Total Raised; $8.2M Series B led by BOWE GROUP, State of Mind Ventures, Viola) | Industrial AMR/AGV Robotics Engine Platform; drag-and-drop ROS flow builder; fleet traffic manager; cybersecurity hardening & role-based access for factory automation | **$50 / robot / month**<br>(Annual runtime license starting at $500/robot/year) | **30-day developer trial**<br>(Full ROS navigation, mapping, and simulation evaluation environment for hardware integrators) |
+| **[Tartan Sense](https://www.tartansense.com/)**<br>*(Niqo Robotics)* | **~$35M – $50M Valuation**<br>($22M Total Raised; $13M Series B led by Bidra Innovation Ventures, Fulcrum, Omnivore) | Edge AI computer vision engine; precision spraying autonomous agricultural rover fleet; real-time chemical reduction analytics; offline edge telemetry sync | **$1,200 / machine / month**<br>(Commercial machine tier; seasonal service at ~$15/acre) | **14-day field audit trial**<br>(Up to 50 acres of automated vision analysis and chemical savings audit report) |
+| **[InOrbit](https://www.inorbit.ai/)** | **~$30M – $45M Valuation**<br>($12.7M Total Raised; Series A co-led by L'ATTITUDE Ventures & Globant Ventures) | Cloud-based vendor-agnostic RobOps platform; Adaptive Diagnostics™; real-time map positions; incident management; Time Capsule™ data logging; Space Intelligence AI Copilot | **$30 / robot / month**<br>(Standard Edition usage tier; Developer Edition flat rate at $2,400/yr for up to 8 robots) | **Free Forever Edition**:<br>Unlimited robots for vital observability, Adaptive Diagnostics™, incident Slack alerting, and live map tracking |
+| **[Cogniteam Nimbus](https://www.cogniteam.com/)** | **~$20M – $30M Valuation**<br>($9.8M Total Raised; $5.6M Series A led by Seabarn Management & Panthera) | Cloud robotics AI operating system; drag-and-drop ROS/ROS 2 component library; cloud-in-the-loop simulation; one-click over-the-air (OTA) edge container deployments | **$49 / robot / month**<br>(Nimbus Starter Subscription) | **30-day free trial**<br>(Accessible on `app.cognimbus.com` with in-browser simulation, pre-built ROS modules, and up to 2 connected devices) |
+| **[Polymath Robotics](https://www.polymathrobotics.com/)** | **~$15M – $25M Valuation**<br>($4M Total Raised; YC S22, Samsara Ventures, federal SBIR Phase II awards) | Autonomous vehicle autonomy stack for off-highway industrial machinery; plug-and-play safety layers; radar/LiDAR fusion; path planning; behavior tree coordination | **$500 / vehicle / month**<br>(Autonomy core runtime license) | **14-day sandbox trial**<br>(Virtual proving ground environment with ROS 2 behavior tree tooling and simulation tests) |
+| **[Transitive Robotics](https://transitiverobotics.com/)** | **~$3M – $5M Valuation**<br>(Bootstrapped, profitable, $0 venture capital dilution) | Modular full-stack capabilities; low-latency WebRTC video streaming; remote terminal shell; ClickHouse time-series data storage; Grafana dashboards; micro-frontend embedding | **$5 / robot / month**<br>(A la carte starting tier: Terminal $5/mo, File Sync $10/mo, WebRTC $15/mo, Teleop $20/mo) | **Free Forever Plan**:<br>Free core capabilities (Health Monitoring, ROS Tool, Robot Lock, Missions) + **$100 credit for 30 days** on signup |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+Explore the open-source building blocks of modern robotics infrastructure. The projects below are sorted in **descending order by GitHub star count**. Beside each repository name is a live star badge linking directly to that project's stargazers page.
+
+- **[Autoware](https://github.com/autowarefoundation/autoware)** [![Stars](https://img.shields.io/github/stars/autowarefoundation/autoware?style=social&color=white)](https://github.com/autowarefoundation/autoware/stargazers) — The world's leading open-source software stack for autonomous driving mobility, built natively on ROS 2 with complete perception, localization, planning, and control pipelines.
+- **[ROS 2 (Robot Operating System 2)](https://github.com/ros2/ros2)** [![Stars](https://img.shields.io/github/stars/ros2/ros2?style=social&color=white)](https://github.com/ros2/ros2/stargazers) — The industry-standard open-source robotics middleware framework, delivering real-time determinism, DDS-based communications, cross-platform packaging, and robust hardware abstraction.
+- **[Nav2 (Navigation 2)](https://github.com/ros-navigation/navigation2)** [![Stars](https://img.shields.io/github/stars/ros-navigation/navigation2?style=social&color=white)](https://github.com/ros-navigation/navigation2/stargazers) — Production-grade mobile robot navigation and fleet movement stack for ROS 2. Includes dynamic obstacle avoidance, behavior tree task execution, costmap layers, and smooth trajectory controllers.
+- **[BehaviorTree.CPP](https://github.com/BehaviorTree/BehaviorTree.CPP)** [![Stars](https://img.shields.io/github/stars/BehaviorTree/BehaviorTree.CPP?style=social&color=white)](https://github.com/BehaviorTree/BehaviorTree.CPP/stargazers) — High-performance C++ execution engine for Behavior Trees, widely deployed in robotics mission coordination, autonomous switching, and state management.
+- **[Eclipse Zenoh](https://github.com/eclipse-zenoh/zenoh)** [![Stars](https://img.shields.io/github/stars/eclipse-zenoh/zenoh?style=social&color=white)](https://github.com/eclipse-zenoh/zenoh/stargazers) — Ultra-low overhead protocol unifying data in motion, data in use, and data at rest. Delivers microsecond pub/sub, shared memory, and distributed storage across robot edge devices and the cloud.
+- **[Fast DDS](https://github.com/eProsima/Fast-DDS)** [![Stars](https://img.shields.io/github/stars/eProsima/Fast-DDS?style=social&color=white)](https://github.com/eProsima/Fast-DDS/stargazers) — High-performance OMG RTPS/DDS middleware implementation chosen as the default communications backend for ROS 2 distributions.
+- **[Awesome Robot Descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions)** [![Stars](https://img.shields.io/github/stars/robot-descriptions/awesome-robot-descriptions?style=social&color=white)](https://github.com/robot-descriptions/awesome-robot-descriptions/stargazers) — Curated collection of robot description packages (URDF, MJCF) covering arms, bipeds, quadrupeds, humanoids, and manipulators with license matrices.
+- **[Awesome Robotics](https://github.com/ahundt/awesome-robotics)** [![Stars](https://img.shields.io/github/stars/ahundt/awesome-robotics?style=social&color=white)](https://github.com/ahundt/awesome-robotics/stargazers) — Comprehensive curated index of robotics algorithms, simulator tools, datasets, and foundational literature.
+- **[Lichtblick](https://github.com/lichtblick-suite/lichtblick)** [![Stars](https://img.shields.io/github/stars/lichtblick-suite/lichtblick?style=social&color=white)](https://github.com/lichtblick-suite/lichtblick/stargazers) — Open-source visualization and telemetry management platform for robotics development, maintained as a fork of Foxglove Studio by BMW and community contributors.
+- **[MCAP](https://github.com/foxglove/mcap)** [![Stars](https://img.shields.io/github/stars/foxglove/mcap?style=social&color=white)](https://github.com/foxglove/mcap/stargazers) — High-performance modular container file format for multimodal robotics data, enabling streaming writes, non-sequential message recovery, and zero-copy indexing.
+- **[Open-RMF Demos](https://github.com/open-rmf/rmf_demos)** [![Stars](https://img.shields.io/github/stars/open-rmf/rmf_demos?style=social&color=white)](https://github.com/open-rmf/rmf_demos/stargazers) — Demonstration environments and full reference architectures showcasing multi-fleet coordination, door/lift automation, and AMR traffic deconfliction.
+- **[Open-RMF Core](https://github.com/open-rmf/rmf)** [![Stars](https://img.shields.io/github/stars/open-rmf/rmf?style=social&color=white)](https://github.com/open-rmf/rmf/stargazers) — Open Robot Management Framework (Open-RMF) core libraries for heterogeneous multi-vendor fleet coordination, traffic deconfliction, and infrastructure dispatch.
+- **[Awesome Open Source Robots](https://github.com/stephane-caron/awesome-open-source-robots)** [![Stars](https://img.shields.io/github/stars/stephane-caron/awesome-open-source-robots?style=social&color=white)](https://github.com/stephane-caron/awesome-open-source-robots/stargazers) — Curated index of physical robots with open-source software, mechanical hardware files, and electronics schematics.
+- **[action-ros-ci](https://github.com/ros-tooling/action-ros-ci)** [![Stars](https://img.shields.io/github/stars/ros-tooling/action-ros-ci?style=social&color=white)](https://github.com/ros-tooling/action-ros-ci/stargazers) — GitHub Action for building, linting, and running integration test suites on ROS and ROS 2 package repositories inside CI pipelines.
+- **[Transitive](https://github.com/transitiverobotics/transitive)** [![Stars](https://img.shields.io/github/stars/transitiverobotics/transitive?style=social&color=white)](https://github.com/transitiverobotics/transitive/stargazers) — Open-source full-stack robotics framework featuring namespaced topic access control, reactive cross-device data synchronization, and integrated ClickHouse / Grafana / Alertmanager observability.
+- **[TransAct](https://github.com/transitiverobotics/transact)** [![Stars](https://img.shields.io/github/stars/transitiverobotics/transact?style=social&color=white)](https://github.com/transitiverobotics/transact/stargazers) — Open-source robot fleet management dashboard and control center reference implementation with WebRTC teleoperation, terminal access, and heartbeat monitoring.
+- **[Isaac Mission Dispatch](https://github.com/nvidia-isaac/isaac_mission_dispatch)** [![Stars](https://img.shields.io/github/stars/nvidia-isaac/isaac_mission_dispatch?style=social&color=white)](https://github.com/nvidia-isaac/isaac_mission_dispatch/stargazers) — NVIDIA cloud service framework implementing the VDA 5050 standard to dispatch missions between enterprise cloud fleet managers and ROS 2 edge robots.
+- **[COS Lite Bundle](https://github.com/canonical/cos-lite-bundle)** [![Stars](https://img.shields.io/github/stars/canonical/cos-lite-bundle?style=social&color=white)](https://github.com/canonical/cos-lite-bundle/stargazers) — Canonical Observability Stack Lite combining Prometheus, Loki, and Grafana for Ubuntu-based ROS 2 device monitoring, automatic rosbag upload, and edge anomaly alerts.
+- **[Trillium](https://github.com/RobotnikAutomation/trillium)** [![Stars](https://img.shields.io/github/stars/RobotnikAutomation/trillium?style=social&color=white)](https://github.com/RobotnikAutomation/trillium/stargazers) — Lightweight, open-source web and desktop robotics visualization app based on Foxglove Studio v1.87.0, optimized for low binary footprint and browser-based plugin execution.
+
+> 💡 **Emerging Open Projects**: Keep an eye on **[OpenRobOps (ORO)](https://www.inorbit.ai/)** (InOrbit's upcoming open-source fleet management layer integrated with Open-RMF) and **[NexusOS](https://pypi.org/project/nexusos-robotics/)** (heterogeneous hardware abstraction middleware via async Python HAL plugins).
+
+---
+
+## 🏗️ Recommended Architecture Stacks
+
+For engineering teams building a custom, self-hosted, vendor-agnostic robotics DevOps platform without vendor lock-in, combine these complementary layers:
+
+1. **Edge Middleware & Communications**: [ROS 2](https://github.com/ros2/ros2) + [Eclipse Zenoh](https://github.com/eclipse-zenoh/zenoh) or [Fast DDS](https://github.com/eProsima/Fast-DDS) for low-overhead edge-to-cloud telemetry.
+2. **Multi-Fleet Orchestration & Traffic**: [Open-RMF](https://github.com/open-rmf/rmf) + [Isaac Mission Dispatch](https://github.com/nvidia-isaac/isaac_mission_dispatch) using VDA 5050 standards.
+3. **Continuous Integration & Testing**: [action-ros-ci](https://github.com/ros-tooling/action-ros-ci) running automated unit tests, code linters, and headless simulation loops in GitHub Actions.
+4. **Time-Series Telemetry & Alerting**: [Canonical Observability Stack (COS)](https://github.com/canonical/cos-lite-bundle) with Prometheus, Loki, and Grafana for host health and battery monitoring.
+5. **Full-Stack Teleoperation & Logging**: [Transitive](https://github.com/transitiverobotics/transitive) for remote WebRTC driving and [MCAP](https://github.com/foxglove/mcap) for high-density sensor logging.
+6. **Visualization & Diagnostic Playback**: [Lichtblick](https://github.com/lichtblick-suite/lichtblick) or [Trillium](https://github.com/RobotnikAutomation/trillium) for 3D point cloud inspections and log scrubbing.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! Help make the robotics DevOps ecosystem transparent and accessible:
+
+1. 🍴 **Fork the repository** on GitHub.
+2. 🌿 **Create a new branch** (`git checkout -b feature/add-new-tool`).
+3. 📝 **Add or edit entries** in `README.md`:
+   - Follow the established table or list format.
+   - For SaaS products, include company scale, specific starting tier pricing, and exact free tier/trial limits.
+   - For open-source repos, ensure the star badge format matches: `[![Stars](https://img.shields.io/github/stars/{owner}/{repo}?style=social&color=white)](https://github.com/{owner}/{repo}/stargazers)`.
+4. 🚀 **Commit your changes** (`git commit -m "Add ToolName to Robotics DevOps ecosystem"`).
+5. 📤 **Push to your branch** and submit a **Pull Request** with a concise description of the tool.
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a community-curated directory intended for research, architectural planning, and educational purposes; inclusion does not constitute an endorsement.
+- Robotics DevOps platforms operating physical machinery must adhere to local safety regulations (e.g., ISO 13849, ISO 3691-4, IEC 61508) and comprehensive fail-safe testing prior to live deployment.
+- Self-hosted open-source deployments require proper network isolation, VPN tunneling, encryption-at-rest, and ongoing security patching.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Robotics-Devops&type=date&legend=top-left)](https://star-history.dera.page/#ishandutaa2007/Awesome-Robotics-Devops&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you for visiting **Awesome Robotics DevOps**! 🤖✨
+
+If this curated ecosystem has saved you research hours, helped you architect your robot operations pipeline, or introduced you to your next fleet management tool:
+
+- ⭐ **Star this repository** to help fellow roboticists discover it!
+- 🍴 **Fork and share** it with your engineering team and RobOps communities.
+- 📢 **Share on LinkedIn, X/Twitter, or Reddit** to spread the word.
+- ☕ **Support the maintainer**: If you would like to support the ongoing research, updates, and maintenance of developer ecosystems, please consider sponsoring via the **[GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)**.
+
+<div align="center">
+
+Made with ❤️ for robotics engineers, fleet operators, and developers building the future of physical AI.
+
+</div>
